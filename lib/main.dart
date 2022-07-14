@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/widgets/todo_cart.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,8 +29,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      floatingActionButton: FloatingActionButton(onPressed: null),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            TodoCard()
+          ],
+        ),
+      ),
     );
   }
 }
